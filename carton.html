@@ -4,105 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/Movie-Night.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>movie Night-carton</title>
+    <title>Movie Night - Cartoons</title>
 </head>
 <body id="cartonpage">
-    <div id="nav">
-        <img src="media/Movie-Night.jpg" alt="logo" id="logo">
-        <ul>
-            <li>
-                <a href="home.html" style="font-family: Lucida Calligraphy;"> Movie Night</a>
-            </li>
-            <li>
-                <form action="">
-                    <select name="category" onchange="window.location.href=this.value;" >
-                        <option id="catname" disabled selected>
-                            category
-                        </option>
-                        <option value="carton.html">
-                            <a class="cat" href="carton.html"> carton</a>
-                        </option>
-                        <option value="romantic.html">
-                            <a class="cat" href="romantic.html">romantic</a>
-                        </option>
-    
-                    </select>
-                </form>
-            </li>
-            
-        </ul>
-    </div>
-    <a href="#cartonpage"><img src="media/upper-29.svg" id="up"></a>
-    <div class="film">
-        <img src="media/download.jfif" alt="inside out part 2">
-        <div class="discrib">
-            <p>inside out part 2</p>
-            <p>Rating the movie out of five:4.9</p>
-            <p><button>dwonload film </button></p>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(217, 223, 255);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="media/Movie-Night.jpg" alt="logo" style="width: 60px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" style="font-family: 'Lucida Calligraphy';">Movie Night</a>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" onchange="window.location.href=this.value;">
+                            <option disabled selected>Category</option>
+                            <option value="carton.html">Cartoon</option>
+                            <option value="romantic.html">Romantic</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-    </div>
-    <div class="film">
-        <img src="media/scale.webp" alt="inside out part 2">
-        <div class="discrib">
-            <p>inside out part 1</p>
-            <p>Rating the movie out of five:4.95</p>
-            <p><button>dwonload film </button></p>
+    <!-- Scroll to Top Button -->
+    <a href="#cartonpage"><img src="media/upper-29.svg" id="up" class="position-fixed bottom-0 end-0 m-3" style="width: 40px; cursor: pointer;"></a>
 
+    <!-- Movie Listings -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Movie Card 1 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/download.jfif" alt="Inside Out Part 2" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Inside Out Part 2</h5>
+                        <p class="card-text">Rating: 4.9/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 2 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/scale.webp" alt="Inside Out Part 1" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Inside Out Part 1</h5>
+                        <p class="card-text">Rating: 4.95/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 3 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/Moana.jpg" alt="Moana Part 1" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Moana Part 1</h5>
+                        <p class="card-text">Rating: 4.75/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 4 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/moana-2.jpg" alt="Moana Part 2" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Moana Part 2</h5>
+                        <p class="card-text">Rating: 4.3/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 5 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/coco.jpg" alt="COCO" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">COCO</h5>
+                        <p class="card-text">Rating: 4.1/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 6 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/scale (1).webp" alt="Brave" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Brave</h5>
+                        <p class="card-text">Rating: 3.39/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Card 7 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/b&b.jpg" alt="Beauty and the Beast" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Beauty and the Beast</h5>
+                        <p class="card-text">Rating: 4.5/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-    <div class="film">
-        <img src="media/Moana.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>Moana part 1</p>
-            <p>Rating the movie out of five:4.75</p>
-            <p><button>dwonload film </button></p>
 
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/moana-2.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>Moana part 1</p>
-            <p>Rating the movie out of five:4.3</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/coco.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>COCO</p>
-            <p>Rating the movie out of five:4.1</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/scale (1).webp" alt="inside out part 2">
-        <div class="discrib">
-            <p>Brave</p>
-            <p>Rating the movie out of five:3.39</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/b&b.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>Beauty and the beast</p>
-            <p>Rating the movie out of five:4.5</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
