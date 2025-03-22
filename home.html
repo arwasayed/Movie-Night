@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free movies platform">
-    <meta name="keywords" content="movies,filmes">
     <link rel="icon" href="media/Movie-Night.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Family Night</title>
 </head>
+<body id="top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="media/Movie-Night.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Movie Night</a>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" onchange="window.location.href=this.value;">
+                            <option disabled selected>Category</option>
+                            <option value="carton.html">Cartoon</option>
+                            <option value="romantic.html">Romantic</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<body id="top" >
-    <div id="nav">
-        <img src="media/Movie-Night.jpg" alt="logo" id="logo">
-        <ul>
-            <li>
-                <a href="home.html" style="font-family: Lucida Calligraphy;"> Movie Night</a>
-            </li>
-            <li>
-                <form action="">
-                <select name="category" onchange="window.location.href=this.value;" >
-                    <option id="catname" disabled selected>
-                        category
-                    </option>
-                    <option value="carton.html">
-                        <a class="cat" href="carton.html"> carton</a>
-                    </option>
-                    <option value="romantic.html">
-                        <a class="cat" href="romantic.html">romantic</a>
-                    </option>
-
-                </select>
-            </form>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
+    <!-- Hero Section -->
     <div id="homepage">
         <div>
-            <p>
-                Movie Night
-            </p>
-            <p>
-                This is a platform to display various categories of fun and interesting movies for free to
-                ensure a fun family night. An interesting movie. We hope you enjoy watching it.
-            </p>
+            <p>Movie Night</p>
+            <p>This is a platform to display various categories of fun and interesting movies for free to ensure a fun family night.</p>
         </div>
     </div>
-    <div id="carton">
-        <img src="media/images.png" alt="carton">
-        <p>
-            Enjoy a selection of the most enjoyable and best animated films and cartoons, where the world of
-            imagination, suspense and fantasy lives different adventures with your favorite fictional characters. <a href="carton.html">Click
-            here </a> and spend a fun night.
-        </p>
+
+    <!-- Cartoons Section -->
+    <div id="carton" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="media/images.png" alt="carton" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <p>Enjoy a selection of the most enjoyable and best animated films and cartoons. <a href="carton.html">Click here</a> and spend a fun night.</p>
+            </div>
+        </div>
     </div>
-    <div id="romantic">
-        <img src="media/romantic-movie-time-concept-retro-260nw-1894675288.png" alt="carton">
-        <p>
-            We offer you a bouquet of the most beautiful romantic films full of warm feelings and rosy dreams. Just
-            <a href="romantic.html">click here </a> to spend a fun and happy time.
-        </p>
+
+    <!-- Romantic Section -->
+    <div id="romantic" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p>We offer you a bouquet of the most beautiful romantic films full of warm feelings and rosy dreams. Just <a href="romantic.html">click here</a> to spend a fun and happy time.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="media/romantic-movie-time-concept-retro-260nw-1894675288.png" alt="romantic" class="img-fluid">
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
     <footer id="contact">
-        <p>contact us :</p>
+        <p>Contact us:</p>
         <div>
             <a href="https://www.facebook.com"><img src="media/face.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/"><img src="media/insta.png" alt="instegram"></a>
+            <a href="https://www.instagram.com/"><img src="media/insta.png" alt="instagram"></a>
             <a href="mailto://arwa@gmail.com"><img src="media/mail.png" alt="email"></a>
         </div>
     </footer>
-    <a href="#top"><img src="media/upper-29.svg" id="up"></a>
-</body>
 
+    <!-- Scroll to Top Button -->
+    <a href="#top"><img src="media/upper-29.svg" id="up"></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
