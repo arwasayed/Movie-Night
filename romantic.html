@@ -4,107 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/Movie-Night.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>movie Night-romantic</title>
+    <title>Movie Night - Romantic</title>
 </head>
-<body id="romanticpage" >
-    <div id="nav">
-        <img src="media/Movie-Night.jpg" alt="logo" id="logo">
-        <ul>
-            <li>
-                <a href="home.html" style="font-family: Lucida Calligraphy;"> Movie Night</a>
-            </li>
-            <li>
-                <form action="">
-                    <select name="category" onchange="window.location.href=this.value;" >
-                        <option id="catname" disabled selected>
-                            category
-                        </option>
-                        <option value="carton.html">
-                            <a class="cat" href="carton.html"> carton</a>
-                        </option>
-                        <option value="romantic.html">
-                            <a class="cat" href="romantic.html">romantic</a>
-                        </option>
-    
-                    </select>
-                </form>
-            </li>
-            
-        </ul>
-    </div>
-    
-    <a href="#romanticpage"><img src="media/upper-29.svg" id="up"></a>
-    <div class="film">
-        <img src="media/87-me-before-you.webp" alt="inside out part 2">
-        <div class="discrib">
-            <p>Me before you</p>
-            <p>Rating the movie out of five:4.9</p>
-            <p><button>dwonload film </button></p>
-
+<body id="romanticpage">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(217, 223, 255);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="media/Movie-Night.jpg" alt="logo" style="width: 60px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" style="font-family: 'Lucida Calligraphy';">Movie Night</a>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" onchange="window.location.href=this.value;">
+                            <option disabled selected>Category</option>
+                            <option value="carton.html">Cartoon</option>
+                            <option value="romantic.html">Romantic</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-    </div>
-    <div class="film">
-        <img src="media/scale (2).webp" alt="inside out part 2">
-        <div class="discrib">
-            <p>The Fault in our stars</p>
-            <p>Rating the movie out of five:4.95</p>
-            <p><button>dwonload film </button></p>
+    <!-- Scroll to Top Button -->
+    <a href="#romanticpage"><img src="media/upper-29.svg" id="up" class="position-fixed bottom-0 end-0 m-3" style="width: 40px; cursor: pointer;"></a>
 
+    <!-- Movie Listings -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Movie 1 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/87-me-before-you.webp" alt="Me Before You" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body discrib text-center">
+                        <p class="card-title">Me Before You</p>
+                        <p class="card-text">Rating: 4.9/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/scale (2).webp" alt="The Fault in Our Stars" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body discrib text-center">
+                        <p class="card-title">The Fault in Our Stars</p>
+                        <p class="card-text">Rating: 4.95/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/titanic.webp" alt="Titanic" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body discrib text-center">
+                        <p class="card-title">Titanic</p>
+                        <p class="card-text">Rating: 4.75/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 4 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/poster.jpg" alt="3391 Kilometre" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body discrib text-center">
+                        <p class="card-title">3391 Kilometre</p>
+                        <p class="card-text">Rating: 4.3/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 5 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/0000.jpg" alt="0000 Kilometre" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body discrib text-center">
+                        <p class="card-title">0000 Kilometre</p>
+                        <p class="card-text">Rating: 4.1/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 6 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/Delibal-385x550.jpg" alt="Delibal" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body discrib text-center">
+                        <p class="card-title">Delibal</p>
+                        <p class="card-text">Rating: 3.39/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 7 -->
+            <div class="col">
+                <div class="card h-100 film">
+                    <img src="media/last.jpg" alt="Last Call for Istanbul" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;">
+                    <div class="card-body discrib text-center">
+                        <p class="card-title">Last Call for Istanbul</p>
+                        <p class="card-text">Rating: 4.5/5</p>
+                        <button class="btn btn-primary w-100">Download Film</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-    <div class="film">
-        <img src="media/titanic.webp" alt="inside out part 2">
-        <div class="discrib">
-            <p>Titanic</p>
-            <p>Rating the movie out of five:4.75</p>
-            <p><button>dwonload film </button></p>
 
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/poster.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>3391 Kilometre</p>
-            <p>Rating the movie out of five:4.3</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/0000.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>0000 Kilometre</p>
-            <p>Rating the movie out of five:4.1</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/Delibal-385x550.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>Delibal</p>
-            <p>Rating the movie out of five:3.39</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
-    <div class="film">
-        <img src="media/last.jpg" alt="inside out part 2">
-        <div class="discrib">
-            <p>Last call for istanbul</p>
-            <p>Rating the movie out of five:4.5</p>
-            <p><button>dwonload film </button></p>
-
-        </div>
-
-    </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
