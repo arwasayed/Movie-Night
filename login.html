@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free movies platform">
     <meta name="keywords" content="movies,filmes">
     <link rel="icon" href="media/Movie-Night.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>login</title>
+    <title>Login</title>
 </head>
+<body id="login" class="d-flex align-items-center justify-content-center" style="background-color: rgb(217, 223, 255);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Left Side (Image) -->
+            <div class="col-md-6 d-none d-md-block">
+                <img src="media/people-watching-movie-home_23-2148564822.jpg" alt="Movie Night" class="img-fluid rounded-start">
+            </div>
 
-<body id="login">
+            <!-- Right Side (Login Form) -->
+            <div class="col-md-6 bg-white p-5 rounded-end">
+                <form action="home.html">
+                    <fieldset>
+                        <legend class="text-center mb-4" style="font-size: 2rem; font-weight: bold; font-family: 'Lucida Calligraphy';">
+                            Log In
+                        </legend>
 
-    <div style="background-color: white;position: absolute;top: 10%;left: 15%;width: 70%;height: 80%;">
-        <div
-            style="float: left;; width: 60%;height: 100%;margin: 0; padding: 0; align-content: center;background-color: rgb(217, 223, 255);">
-            <img src="media/people-watching-movie-home_23-2148564822.jpg" alt="move night" style="width: 100%;">
+                        <!-- Email Input -->
+                        <div class="mb-3">
+                            <label for="UserEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="UserEmail" name="UserEmail" placeholder="Enter your email" required>
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100" style="background-color: rgb(101, 115, 255); border: none;">
+                            Log In
+                        </button>
+
+                        <!-- Sign Up Link -->
+                        <p class="mt-3 text-center">
+                            Don't have an account? <a href="signup.html" style="color: rgb(101, 115, 255); font-weight: bold;">Sign Up</a>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-        <div style="float: left;; width: 40%;height: 100%;margin: 0; padding: 0; align-content: center;">
-            <form action="home.html">
-                <fieldset style="border: none;">
-                    <legend>
-                        Log in
-                    </legend>
-                    <input type="email" name="UserEmail" placeholder="Enter your email" required>
-                    <input type="password" name="password" placeholder="Enter password" required>
-                    <input type="submit" value="log in" style="background-color: rgb(101, 115, 255);font-size:larger;
-                         font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                          color: white; border: none;margin: 10px; border-radius: 5px; height: 25px;width: 70%;">
-                    <p>Don't have account? <a href="sign up.html">sign up</a></p>
-                </fieldset>
-
-            </form>
-
-        </div>
-
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
